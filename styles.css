@@ -13,6 +13,10 @@ body {
     width: 100%;
 }
 
+.column {
+    flex-direction: column;
+}
+
 .header {
     font-family: 'Permanent Marker', cursive;
     font-size: 10em;
@@ -25,9 +29,25 @@ body {
     letter-spacing: .01em;
 }
 
+.subHead {
+    font-family: 'Anton', sans-serif;
+    font-size: 1.2em;
+    color: black;
+    text-transform: uppercase;
+}
+
+.dg1 {
+    font-size: 1.9em;
+    text-transform: uppercase;
+}
+
+.dg2 {
+    font-size: 1.7em;
+    text-transform: uppercase;
+}
+
 .flip {
     transform: scaleX(-1);
-    filter: FlipH;
 }
 
 .headIMG {
