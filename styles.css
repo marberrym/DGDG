@@ -7,6 +7,7 @@ body {
 }
 
 .head {
+    margin-top: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,20 +32,70 @@ body {
 
 .subHead {
     font-family: 'Anton', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.6em;
     color: black;
     text-transform: uppercase;
 }
 
+
+
 .dg1 {
-    font-size: 1.9em;
     text-transform: uppercase;
+    margin-left: .5em;
+    animation: grow1 4s infinite;
 }
 
 .dg2 {
-    font-size: 1.7em;
+    /* font-size: 1.7em; */
     text-transform: uppercase;
+    margin-left: .5em;
+    animation: grow2 4s infinite;
 }
+.dg3 {
+    animation: grow3 4s infinite;
+    margin-left: .5em;
+}
+
+@keyframes grow1 {
+    5% {
+        transform: scale(1) translateY(0);
+
+    }
+    25% {
+        transform: scale(1.2) translateY(-20%);
+   }
+    45% {
+        transform: scale(1) translateY(0);
+
+    }
+}
+@keyframes grow2 {
+    30% {
+        transform: scale(1) translateY(0);
+
+    }
+    50% {
+        transform: scale(1.2) translateY(-20%);
+   }
+    70% {
+        transform: scale(1) translateY(0);
+
+    }
+}
+@keyframes grow3 {
+    55% {
+        transform: scale(1) translateY(0);
+
+    }
+    75% {
+        transform: scale(1.2) translateY(-20%);
+   }
+    95% {
+        transform: scale(1) translateY(0);
+
+    }
+}
+
 
 .flip {
     transform: scaleX(-1);

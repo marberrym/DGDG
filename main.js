@@ -9,19 +9,30 @@ let Head = () =>
     ])
 
 let HeadCaption = () => 
-    h('div', {className: 'head column subHead'}, [
+    h('div', {className: 'head subHead'}, [
         h('div', {className: 'dg1'}, 'Do good.'),
         h('div', {className: 'dg2'}, 'Die great.'),
-        h('div', {}, 'Stay connected.'),
+        h('div', {className: 'dg3'}, 'Stay connected.'),
     ])
 
-let TotalHead = () => 
-    h('div', {}, [
-        h(Head),
-        h(HeadCaption)
-    ])
+class DGDGHomePage extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            postsByCity: 1,
+        }
+    }
+    render() {
+        return h('div', {}, [
+            h(Head),
+            h(HeadCaption)
+        ])
+    }
+
+}
+    
 
 
 
-render(h(TotalHead), document.getElementById('body'));
+render(h(DGDGHomePage), document.getElementById('body'));
 
